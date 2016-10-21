@@ -123,19 +123,20 @@
         
 /* ANIMATIONS */
 
-    .slide {
+    @keyframes example {
+        0%   {background-color: #bec1ff;}
+        25%  {background-color: #efbeff;}
+        50%  {background-color: #ffbeeb;}
+        100% {background-color: #ffbebe;}
+    }
+        
+    pas {
         width: 100px;
         height: 100px;
-        background: black;
-        left: 5px;
-        -webkit-transition: left 2s;
-        transition: left 2s;
-        display: block;
-    }
-
-    .slide:hover {
-        left: 50px;
-    }
+        background-color: #bedfff;
+        animation-name: example;
+        animation-duration: 5s;
+    }  
         
 /* START BODY */
 
@@ -180,7 +181,7 @@
             <b>sm links</b><br>-<a href="http://caiohtee.tumblr.com">tumblr</a><br>-<a href="https://twitter.com/alpluu">twitter</a></p>
     </sideright>
     <cont>
-        <div id="slide"></div>
+        <pas></pas>
     </cont>
 
 
